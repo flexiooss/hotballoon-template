@@ -1,0 +1,15 @@
+{
+  "arguments":
+  [
+    {
+      "argument": "action",
+      "defaultValue": "template",
+      "format": "^[A-Z][a-zA-Z0-9]*$"
+    },
+    {
+      "argument": "component",
+      "defaultValue": "template",
+      "format": "^[A-Z][a-zA-Z0-9]*$"
+    }
+  ]
+}

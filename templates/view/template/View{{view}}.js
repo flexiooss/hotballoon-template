@@ -9,7 +9,7 @@ export class View{{view}} extends View {
   constructor(viewParameters, storeContainer) {
     super(viewParameters)
     this.__stores = storeContainer
-    this.subscribeToStore(this.__stores.store{{store}})
+    this.subscribeToStore() // TODO set stores to use in view {{view}}
   }
 
   /**

@@ -1,6 +1,6 @@
 import {Component{{component}}} from './Component{{component}}'
 
-export class InitComponent{{component}} {
+export class Component{{component}}Builder {
   /**
    *
    * @param {HotBalloonApplication} APP

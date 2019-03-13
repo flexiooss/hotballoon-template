@@ -1,11 +1,10 @@
 'use strict'
 import {ViewContainer, ViewParameters, ViewEventListenerBuilder} from 'hotballoon'
-import {View{{view}}} from './views/View{{view}}'
 
 import '../../assets/css/style.css'
 import {StoreContainer} from '../StoreContainer'
 
-const {{view}}_VIEW = Symbol('{{view}}_VIEW')
+const VIEW = Symbol('VIEW')
 
 export class ViewContainer{{viewcontainer}} extends ViewContainer {
   /**
@@ -27,9 +26,9 @@ export class ViewContainer{{viewcontainer}} extends ViewContainer {
    */
   __registerViews() {
     this.addView(
-      new View{{view}}(
-        new ViewParameters({{view}}_VIEW, this),
-        new StoreContainer(this.__stores.store{{store}})
+      new View( // TODO set View
+        new ViewParameters(VIEW, this), // TODO set id of view
+        new StoreContainer() // TODO set stores to use in view
       )
     )
     this.__handleEvents()

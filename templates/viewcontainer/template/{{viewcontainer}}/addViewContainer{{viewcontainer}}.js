@@ -12,8 +12,8 @@ export const addViewContainer{{viewcontainer}} = (component) => {
         VIEW_CONTAINER_ID,
         component.__parentNode
       ),
-      new StoreContainer(component.__storeHandler{{store}}),
-      new ActionContainer(component.__action{{action}})
+      new StoreContainer(), // TODO add stores to use in view container {{viewcontainer}}
+      new ActionContainer() // TODO add actions to use in view container {{viewcontainer}}
     )
   )
 

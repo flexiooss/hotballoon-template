@@ -1,0 +1,10 @@
+{
+  "arguments":
+  [
+    {
+      "argument": "viewcontainer",
+      "defaultValue": "template",
+      "format": "^[A-Z][a-zA-Z0-9]*$"
+    }
+  ]
+}

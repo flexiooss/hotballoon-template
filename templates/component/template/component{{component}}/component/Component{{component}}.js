@@ -1,11 +1,6 @@
 'use strict'
 import {TypeCheck} from 'hotballoon'
 import {isNode, assert} from 'flexio-jshelpers'
-import {initStore{{store}}} from '../stores/Store{{store}}/InitStore{{store}}'
-import {StoreHandler{{store}}} from '../stores/Store{{store}}/StoreHandler{{store}}'
-import {initAction{{action}}} from '../actions/Action{{action}}/InitAction{{action}}'
-import {listenAction{{action}}} from '../actions/Action{{action}}/ListenAction{{action}}'
-import {addViewContainer{{viewcontainer}}} from '../views/{{viewcontainer}}/addViewContainer{{viewcontainer}}'
 
 export class Component{{component}} {
   /**
@@ -28,16 +23,16 @@ export class Component{{component}} {
   }
 
   mountView() {
-    addViewContainer{{viewcontainer}}(this)
+    addViewContainer(this) // TODO set viewContainer
       .renderAndMount(this.__parentNode)
     return this
   }
 
   setEvent() {
-    this.__store{{store}} = initStore{{store}}(this)
-    this.__storeHandler{{store}} = new StoreHandler{{store}}(this.__store{{store}})
-    this.__action{{action}} = initAction{{action}}(this)
-    listenAction{{action}}(this)
+    // TODO init stores
+    // TODO init storeHandlers
+    // TODO init actions
+    // TODO listen actions
     return this
   }
 
@@ -49,13 +44,6 @@ export class Component{{component}} {
     return this.__componentContext
   }
 
-  /**
-   *
-   * @returns {Store}
-   */
-  get store{{store}}() {
-    return this.__store{{store}}
-  }
 
   /**
    *
