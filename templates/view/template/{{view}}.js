@@ -1,6 +1,6 @@
 import {View, ElementEventListenerBuilder, e} from 'hotballoon'
 
-export class View{{view}} extends View {
+export class {{view}} extends View {
   /**
    *
    * @param {ViewParameters} viewParameters
